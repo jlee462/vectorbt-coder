@@ -38,7 +38,7 @@ data "coder_parameter" "ram" {
   display_name = "RAM (GB)"
   description  = "Choose amount of RAM (min: 16 GB, max: 128 GB)"
   type         = "number"
-  icon         = "https://raw.githubusercontent.com/matifali/logos/main/memory.svg"
+  icon         = "https://raw.githubusercontent.com/jlee462/logos/main/memory.svg"
   mutable      = true
   default      = "32"
   order        = 2
@@ -51,7 +51,7 @@ data "coder_parameter" "ram" {
 data "coder_parameter" "framework" {
   name         = "framework"
   display_name = "Deep Learning Framework"
-  icon         = "https://raw.githubusercontent.com/matifali/logos/main/memory.svg"
+  icon         = "https://raw.githubusercontent.com/jlee462/logos/main/memory.svg"
   description  = "Choose your preffered framework"
   type         = "string"
   mutable      = false
@@ -61,31 +61,31 @@ data "coder_parameter" "framework" {
     name        = "PyTorch"
     description = "PyTorch"
     value       = "torch"
-    icon        = "https://raw.githubusercontent.com/matifali/logos/main/pytorch.svg"
+    icon        = "https://raw.githubusercontent.com/jlee462/logos/main/pytorch.svg"
   }
   option {
     name        = "Tensorflow"
     description = "Tensorflow"
     value       = "tf"
-    icon        = "https://raw.githubusercontent.com/matifali/logos/main/tensorflow.svg"
+    icon        = "https://raw.githubusercontent.com/jlee462/logos/main/tensorflow.svg"
   }
   option {
     name        = "Tensorflow + PyTorch"
     description = "Tensorflow + PyTorch"
     value       = "tf-torch"
-    icon        = "https://raw.githubusercontent.com/matifali/logos/main/tf-torch.svg"
+    icon        = "https://raw.githubusercontent.com/jlee462/logos/main/tf-torch.svg"
   }
   option {
     name        = "Tensorflow + PyTorch + conda"
     description = "Tensorflow + PyTorch + conda"
     value       = "tf-torch-conda"
-    icon        = "https://raw.githubusercontent.com/matifali/logos/main/tf-torch-conda.svg"
+    icon        = "https://raw.githubusercontent.com/jlee462/logos/main/tf-torch-conda.svg"
   }
   option {
     name        = "Conda"
     description = "Only conda (install whatever you need)"
     value       = "conda"
-    icon        = "https://raw.githubusercontent.com/matifali/logos/main/conda.svg"
+    icon        = "https://raw.githubusercontent.com/jlee462/logos/main/conda.svg"
   }
 }
 
@@ -105,7 +105,7 @@ resource "coder_metadata" "workspace_info" {
 
 data "coder_parameter" "vscode-web" {
   name        = "VS Code Web"
-  icon        = "https://raw.githubusercontent.com/matifali/logos/main/code.svg"
+  icon        = "https://raw.githubusercontent.com/jlee462/logos/main/code.svg"
   description = "Do you want VS Code Web?"
   type        = "bool"
   mutable     = true
@@ -115,7 +115,7 @@ data "coder_parameter" "vscode-web" {
 
 data "coder_parameter" "jupyter" {
   name        = "Jupyter"
-  icon        = "https://raw.githubusercontent.com/matifali/logos/main/jupyter.svg"
+  icon        = "https://raw.githubusercontent.com/jlee462/logos/main/jupyter.svg"
   description = "Do you want Jupyter Lab?"
   type        = "bool"
   mutable     = true
