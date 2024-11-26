@@ -217,7 +217,7 @@ resource "coder_agent" "main" {
 }
 
 locals {
-  registry_name = "matifali/dockerdl"
+  registry_name = "jlee462/vectorbtdockerdl"
 }
 
 data "docker_registry_image" "deeplearning" {
